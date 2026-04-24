@@ -2,7 +2,7 @@ services:
   # 1. DATABASE SERVICE
   db:
     image: postgres:15
-    container_name: printing-db-container
+    container_name: printshop-db-container
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123123
@@ -16,7 +16,7 @@ services:
   # 2. SPRING BOOT APP
   printing-app:
     build: .
-    container_name: printing
+    container_name: printshop
     depends_on:
       - db
     environment:
