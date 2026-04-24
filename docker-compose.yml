@@ -29,9 +29,9 @@ services:
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       SPRING_JPA_SHOW_SQL: false
 
-      PORT: 8081
+      PORT: 8082
     ports:
-      - "8081:8081"
+      - "8082:8081"
     networks:
       - proxy
     restart: always
